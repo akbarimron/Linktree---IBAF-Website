@@ -1,0 +1,15 @@
+.navbar-custom {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  color: #ffc107 !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  transition: color 0.3s ease;
+}

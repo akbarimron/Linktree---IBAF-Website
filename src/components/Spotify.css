@@ -1,0 +1,79 @@
+.spotify-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.spotify-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.spotify-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.spotify-logo {
+  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.playlist-nama {
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 15px 0;
+}
+
+.playlist-deskripsi {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.playlist-info {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.playlist-info .badge {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.spotify-info {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f2 100%);
+}
+
+.spotify-info h5 {
+  color: #1a1a2e;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.spotify-info p {
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .spotify-section {
+    padding: 50px 0;
+  }
+
+  .spotify-logo {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+.ketua-umum {
+  padding: 80px 0;
+  background: white;
+}
+
+.ketua-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 193, 7, 0.4);
+}
+
+.ketua-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ketua-nama {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 5px;
+}
+
+.ketua-jabatan {
+  font-size: 1.3rem;
+  color: #ffc107;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.ketua-periode {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 3px;
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
+.ketua-card h5 {
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ketua-text {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .ketua-nama {
+    font-size: 1.5rem;
+  }
+
+  .image-placeholder {
+    width: 200px;
+    height: 280px;
+  }
+
+  .ketua-umum {
+    padding: 50px 0;
+  }
+}
