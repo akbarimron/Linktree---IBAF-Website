@@ -31,18 +31,11 @@ export default function Footer() {
           <Col md={4}>
             <h6 className="footer-title">Ikuti Kami</h6>
             <div className="social-links">
-              <a href="https://facebook.com/gymupi" target="_blank" rel="noopener noreferrer" className="social-link">
-                <FaFacebook />
-              </a>
+      
               <a href="https://instagram.com/gymupi" target="_blank" rel="noopener noreferrer" className="social-link">
                 <FaInstagram />
               </a>
-              <a href="https://twitter.com/gymupi" target="_blank" rel="noopener noreferrer" className="social-link">
-                <FaTwitter />
-              </a>
-              <a href="https://youtube.com/gymupi" target="_blank" rel="noopener noreferrer" className="social-link">
-                <FaYoutube />
-              </a>
+          
             </div>
             <div className="footer-contact mt-4">
               <p className="contact-item">
@@ -62,10 +55,10 @@ export default function Footer() {
         <Row>
           <Col md={12} className="text-center">
             <p className="copyright">
-              &copy; {currentYear} GYMUPI - Gym UPI. Semua hak cipta dilindungi.
+              &copy; {currentYear} IBAF UPI. Semua hak cipta dilindungi.
             </p>
             <p className="footer-credit">
-              Dibuat dengan ❤️ oleh Tim Developer GYMUPI
+              Dibuat  oleh Tim Developer IBF UPI
             </p>
           </Col>
         </Row>
