@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar as BSNavbar, Nav, Container } from 'react-bootstrap';
 import { FaDumbbell } from 'react-icons/fa';
-import logoIBAF from '../img/logo_ibaf.png';
+import logoIBAF from '../../../img/logo_ibaf.png';
 import './Navbar.css';
 
 export default function Navbar() {

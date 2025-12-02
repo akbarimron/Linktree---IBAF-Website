@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaSpotify } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import podcastImg from '../img/podcast/podcast.png';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import podcastImg from '../../../img/podcast/podcast.png';
 import './Spotify.css';
 
 export default function Spotify() {

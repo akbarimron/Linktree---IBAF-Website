@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaDumbbell, FaUsers, FaTrophy } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
 import './Hero.css';
 
 export default function Hero() {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaImages } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import trainingImg from '../img/TEMP/IBAF_TRAINING.png';
-import tempImg from '../img/TEMP/TEMP.png';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import trainingImg from '../../../img/TEMP/IBAF_TRAINING.png';
+import tempImg from '../../../img/TEMP/TEMP.png';
 import './Dokumentasi.css';
 
 export default function Dokumentasi() {

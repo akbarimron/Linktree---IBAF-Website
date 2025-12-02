@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaInfoCircle } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
 import './InformasiUmum.css';
 
 export default function InformasiUmum() {

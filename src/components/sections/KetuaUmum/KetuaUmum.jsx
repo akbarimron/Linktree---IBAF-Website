@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import ketumFoto from '../img/ketum.png';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import ketumFoto from '../../../img/ketum.png';
 import './KetuaUmum.css';
 import { BsInstagram } from 'react-icons/bs';
 

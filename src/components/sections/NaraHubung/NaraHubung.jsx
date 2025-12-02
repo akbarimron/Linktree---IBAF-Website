@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import vonImg from '../img/narahubung/von.png';
-import jerukImg from '../img/narahubung/jeruk.png';
-import bareImg from '../img/narahubung/bare.png';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import vonImg from '../../../img/narahubung/von.png';
+import jerukImg from '../../../img/narahubung/jeruk.png';
+import bareImg from '../../../img/narahubung/bare.png';
 import './NaraHubung.css';
 
 export default function NaraHubung() {

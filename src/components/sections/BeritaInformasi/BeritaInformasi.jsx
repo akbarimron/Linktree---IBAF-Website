@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCalendarAlt, FaUser } from 'react-icons/fa';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import sertifikasiImg from '../img/beritainformasi/sertifikasi_kalistenik.jpeg';
-import funrunImg from '../img/beritainformasi/funrun.jpeg';
-import batch3 from '../img/beritainformasi/batch_3.png';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import sertifikasiImg from '../../../img/beritainformasi/sertifikasi_kalistenik.jpeg';
+import funrunImg from '../../../img/beritainformasi/funrun.jpeg';
+import batch3 from '../../../img/beritainformasi/batch_3.png';
 import './BeritaInformasi.css';
 
 export default function BeritaInformasi() {
