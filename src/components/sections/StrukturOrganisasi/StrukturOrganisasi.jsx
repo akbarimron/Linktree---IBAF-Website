@@ -1,58 +1,17 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Nav, TabContent, TabPane } from 'react-bootstrap';
 import { FaUsers, FaChalkboardUser, FaUserTie } from 'react-icons/fa6';
+import { FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
+import organisasiData from './organisasiData.json';
 import './StrukturOrganisasi.css';
 
 export default function StrukturOrganisasi() {
   const ref = useIntersectionObserver();
   const [activeTab, setActiveTab] = useState('struktur');
+  const [activeDivisi, setActiveDivisi] = useState(null);
 
-  const kepengurusan = [
-    {
-      posisi: 'Ketua Umum',
-      nama: 'Nama Ketua Umum',
-      divisi: 'Pimpinan'
-    },
-    {
-      posisi: 'Wakil Ketua Umum',
-      nama: 'Nama Wakil Ketua',
-      divisi: 'Pimpinan'
-    },
-    {
-      posisi: 'Sekretaris Umum',
-      nama: 'Nama Sekretaris',
-      divisi: 'Administrasi'
-    },
-    {
-      posisi: 'Bendahara Umum',
-      nama: 'Nama Bendahara',
-      divisi: 'Administrasi'
-    }
-  ];
-
-  const divisi = [
-    {
-      nama: 'Divisi Pengembangan SDM',
-      deskripsi: 'Bertanggung jawab atas pengembangan skill dan kemampuan anggota',
-      anggota: 5
-    },
-    {
-      nama: 'Divisi Olahraga',
-      deskripsi: 'Mengelola dan mengorganisir kegiatan olahraga dan kebugaran',
-      anggota: 6
-    },
-    {
-      nama: 'Divisi Hubungan Masyarakat',
-      deskripsi: 'Membangun hubungan dengan pihak eksternal dan media',
-      anggota: 4
-    },
-    {
-      nama: 'Divisi Kemitraan',
-      deskripsi: 'Mencari dan menjalin kerjasama strategis dengan organisasi lain',
-      anggota: 5
-    }
-  ];
+  const { kepengurusan, divisi: divisiData } = organisasiData;
 
   return (
     <section className="struktur-organisasi-section fade-in-section" ref={ref} id="struktur-organisasi">
@@ -146,39 +105,165 @@ export default function StrukturOrganisasi() {
               </TabPane>
 
               <TabPane eventKey="kepengurusan" active={activeTab === 'kepengurusan'}>
-                <Row className="kepengurusan-grid">
-                  {kepengurusan.map((pengurus, idx) => (
-                    <Col lg={6} md={12} key={idx} className="mb-4">
-                      <div className="pengurus-card">
-                        <div className="pengurus-icon">
-                          <FaUserTie />
+                {/* Ketua Umum */}
+                <div className="ketua-section mb-5">
+                  <h4 className="section-subtitle mb-4">Ketua Umum</h4>
+                  <Row className="justify-content-center">
+                    <Col lg={6} md={8} className="mb-4">
+                      <div className="pengurus-card-detail ketua-card">
+                        <div className="pengurus-foto">
+                          <img src={`../../../img/organisasi/${kepengurusan.ketua_umum.foto}`} alt={kepengurusan.ketua_umum.nama} />
                         </div>
-                        <h5 className="pengurus-posisi">{pengurus.posisi}</h5>
-                        <p className="pengurus-nama">{pengurus.nama}</p>
-                        <span className="pengurus-divisi">{pengurus.divisi}</span>
+                        <div className="pengurus-info">
+                          <h5 className="pengurus-posisi">{kepengurusan.ketua_umum.posisi}</h5>
+                          <h4 className="pengurus-nama">{kepengurusan.ketua_umum.nama}</h4>
+                          <div className="pengurus-meta">
+                            <div className="meta-item">
+                              <FaGraduationCap className="me-2" />
+                              <span>{kepengurusan.ketua_umum.prodi}</span>
+                            </div>
+                            <div className="meta-item">
+                              <FaCalendarAlt className="me-2" />
+                              <span>Angkatan {kepengurusan.ketua_umum.tahun_angkatan}</span>
+                            </div>
+                          </div>
+                          <p className="pengurus-deskripsi">{kepengurusan.ketua_umum.deskripsi}</p>
+                          <div className="pengurus-kontribusi">
+                            <strong>Kontribusi:</strong> {kepengurusan.ketua_umum.kontribusi}
+                          </div>
+                        </div>
                       </div>
                     </Col>
-                  ))}
-                </Row>
+                  </Row>
+                </div>
+
+                {/* Wakil Ketua */}
+                <div className="wakil-section">
+                  <h4 className="section-subtitle mb-4">Wakil Ketua Umum</h4>
+                  <Row className="kepengurusan-grid">
+                    {kepengurusan.wakil_ketua.map((wakil, idx) => (
+                      <Col lg={6} md={12} key={idx} className="mb-4">
+                        <div className="pengurus-card-detail">
+                          <div className="pengurus-foto">
+                            <img src={`../../../img/organisasi/${wakil.foto}`} alt={wakil.nama} />
+                          </div>
+                          <div className="pengurus-info">
+                            <h5 className="pengurus-posisi">{wakil.posisi}</h5>
+                            <h5 className="pengurus-nama">{wakil.nama}</h5>
+                            <div className="pengurus-meta">
+                              <div className="meta-item">
+                                <FaGraduationCap className="me-2" />
+                                <span>{wakil.prodi}</span>
+                              </div>
+                              <div className="meta-item">
+                                <FaCalendarAlt className="me-2" />
+                                <span>Angkatan {wakil.tahun_angkatan}</span>
+                              </div>
+                            </div>
+                            <p className="pengurus-deskripsi">{wakil.deskripsi}</p>
+                          </div>
+                        </div>
+                      </Col>
+                    ))}
+                  </Row>
+                </div>
               </TabPane>
 
               <TabPane eventKey="divisi" active={activeTab === 'divisi'}>
-                <Row>
-                  {divisi.map((div, idx) => (
-                    <Col lg={6} md={12} key={idx} className="mb-4">
-                      <div className="divisi-card">
-                        <h5 className="divisi-nama">{div.nama}</h5>
-                        <p className="divisi-deskripsi">{div.deskripsi}</p>
-                        <div className="divisi-footer">
-                          <span className="divisi-anggota">
-                            <FaUsers className="me-2" />
-                            {div.anggota} Anggota
-                          </span>
-                        </div>
-                      </div>
+                <Row className="divisi-buttons mb-4">
+                  {divisiData.map((div) => (
+                    <Col lg={6} md={12} key={div.id} className="mb-3">
+                      <button
+                        className={`divisi-button w-100 ${activeDivisi === div.id ? 'active' : ''}`}
+                        onClick={() => setActiveDivisi(div.id)}
+                      >
+                        <FaUsers className="me-2" />
+                        {div.nama}
+                      </button>
                     </Col>
                   ))}
                 </Row>
+
+                {activeDivisi && (
+                  <div className="divisi-detail">
+                    {divisiData
+                      .filter((div) => div.id === activeDivisi)
+                      .map((div) => (
+                        <div key={div.id}>
+                          <h3 className="divisi-title mb-4">{div.nama}</h3>
+                          <p className="divisi-deskripsi mb-4">{div.deskripsi}</p>
+
+                          {/* Kepala Divisi */}
+                          <div className="kepala-divisi-section mb-5">
+                            <h5 className="section-subtitle mb-3">Kepala Divisi</h5>
+                            <Row className="justify-content-center">
+                              <Col lg={5} md={8}>
+                                <div className="pengurus-card-detail kepala-divisi-card">
+                                  <div className="pengurus-foto">
+                                    <img
+                                      src={`../../../img/organisasi/${div.kepala_divisi.foto}`}
+                                      alt={div.kepala_divisi.nama}
+                                    />
+                                  </div>
+                                  <div className="pengurus-info text-center">
+                                    <h5 className="pengurus-nama">{div.kepala_divisi.nama}</h5>
+                                    <div className="pengurus-meta justify-content-center">
+                                      <div className="meta-item">
+                                        <FaGraduationCap className="me-2" />
+                                        <span>{div.kepala_divisi.prodi}</span>
+                                      </div>
+                                      <div className="meta-item">
+                                        <FaCalendarAlt className="me-2" />
+                                        <span>Angkatan {div.kepala_divisi.tahun_angkatan}</span>
+                                      </div>
+                                    </div>
+                                    <p className="pengurus-deskripsi-small">{div.kepala_divisi.deskripsi}</p>
+                                  </div>
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
+
+                          {/* Anggota Divisi */}
+                          <div className="anggota-divisi-section">
+                            <h5 className="section-subtitle mb-3">
+                              Anggota ({div.anggota.length} orang)
+                            </h5>
+                            <Row>
+                              {div.anggota.map((anggota, idx) => (
+                                <Col lg={4} md={6} sm={12} key={idx} className="mb-4">
+                                  <div className="anggota-card">
+                                    <div className="anggota-foto">
+                                      <img
+                                        src={`../../../img/organisasi/${anggota.foto}`}
+                                        alt={anggota.nama}
+                                      />
+                                    </div>
+                                    <div className="anggota-info">
+                                      <h6 className="anggota-nama">{anggota.nama}</h6>
+                                      <p className="anggota-peran">{anggota.peran}</p>
+                                      <div className="anggota-meta">
+                                        <small>
+                                          <FaGraduationCap className="me-1" />
+                                          {anggota.prodi}
+                                        </small>
+                                      </div>
+                                      <div className="anggota-meta">
+                                        <small>
+                                          <FaCalendarAlt className="me-1" />
+                                          {anggota.tahun_angkatan}
+                                        </small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </Col>
+                              ))}
+                            </Row>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                )}
               </TabPane>
             </TabContent>
           </Col>

@@ -1,0 +1,173 @@
+{
+  "kepengurusan": {
+    "ketua_umum": {
+      "posisi": "Ketua Umum",
+      "nama": "Muhammad Akbar Imron",
+      "prodi": "Pendidikan Informatika",
+      "tahun_angkatan": 2022,
+      "foto": "ketua_umum.jpg",
+      "deskripsi": "Memimpin organisasi IBAF UPI dengan visi pengembangan kesehatan dan kebugaran mahasiswa",
+      "kontribusi": "Kepemimpinan, Strategic Planning, Hubungan Eksternal"
+    }
+  },
+  "wakil_ketua": [
+    {
+      "posisi": "Wakil Ketua Umum",
+      "nama": "Nama Wakil Ketua 1",
+      "prodi": "Pendidikan Olahraga",
+      "tahun_angkatan": 2022,
+      "foto": "wakil_ketua_1.jpg",
+      "deskripsi": "Mendampingi ketua umum dalam menjalankan operasional organisasi",
+      "kontribusi": "Koordinasi Divisi, Event Management"
+    },
+    {
+      "posisi": "Wakil Ketua Umum",
+      "nama": "Nama Wakil Ketua 2",
+      "prodi": "Pendidikan Olahraga",
+      "tahun_angkatan": 2022,
+      "foto": "wakil_ketua_2.jpg",
+      "deskripsi": "Mengelola keberlanjutan program dan dokumentasi organisasi",
+      "kontribusi": "Program Development, Dokumentasi"
+    }
+  ],
+  "divisi": [
+    {
+      "id": 1,
+      "nama": "Divisi Pengembangan SDM",
+      "kepala_divisi": {
+        "nama": "Kepala Divisi SDM",
+        "prodi": "Pendidikan Jasmani",
+        "tahun_angkatan": 2022,
+        "foto": "kepala_divisi_sdm.jpg",
+        "deskripsi": "Bertanggung jawab atas pelatihan dan pengembangan skill anggota"
+      },
+      "deskripsi": "Bertanggung jawab atas pengembangan skill dan kemampuan anggota organisasi melalui pelatihan berkala",
+      "anggota": [
+        {
+          "nama": "Anggota SDM 1",
+          "prodi": "Pendidikan Kesehatan",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_sdm_1.jpg",
+          "peran": "Koordinator Pelatihan"
+        },
+        {
+          "nama": "Anggota SDM 2",
+          "prodi": "Pendidikan Olahraga",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_sdm_2.jpg",
+          "peran": "Program Officer"
+        },
+        {
+          "nama": "Anggota SDM 3",
+          "prodi": "Pendidikan Jasmani",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_sdm_3.jpg",
+          "peran": "Evaluasi dan Monitoring"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nama": "Divisi Olahraga",
+      "kepala_divisi": {
+        "nama": "Kepala Divisi Olahraga",
+        "prodi": "Pendidikan Olahraga",
+        "tahun_angkatan": 2022,
+        "foto": "kepala_divisi_olahraga.jpg",
+        "deskripsi": "Mengelola dan mengorganisir kegiatan olahraga dan kompetisi"
+      },
+      "deskripsi": "Mengelola dan mengorganisir kegiatan olahraga, kompetisi, dan turnamen antar organisasi",
+      "anggota": [
+        {
+          "nama": "Anggota Olahraga 1",
+          "prodi": "Pendidikan Olahraga",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_olahraga_1.jpg",
+          "peran": "Coordinator Cabang Olahraga"
+        },
+        {
+          "nama": "Anggota Olahraga 2",
+          "prodi": "Pendidikan Jasmani",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_olahraga_2.jpg",
+          "peran": "Event Organizer"
+        },
+        {
+          "nama": "Anggota Olahraga 3",
+          "prodi": "Pendidikan Kesehatan",
+          "tahun_angkatan": 2024,
+          "foto": "anggota_olahraga_3.jpg",
+          "peran": "Logistics"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nama": "Divisi Hubungan Masyarakat",
+      "kepala_divisi": {
+        "nama": "Kepala Divisi HUMAS",
+        "prodi": "Pendidikan Komunikasi",
+        "tahun_angkatan": 2022,
+        "foto": "kepala_divisi_humas.jpg",
+        "deskripsi": "Membangun hubungan dengan pihak eksternal dan media sosial"
+      },
+      "deskripsi": "Membangun hubungan dengan pihak eksternal, media, dan mengelola komunikasi organisasi",
+      "anggota": [
+        {
+          "nama": "Anggota HUMAS 1",
+          "prodi": "Pendidikan Komunikasi",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_humas_1.jpg",
+          "peran": "Media Officer"
+        },
+        {
+          "nama": "Anggota HUMAS 2",
+          "prodi": "Pendidikan Informatika",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_humas_2.jpg",
+          "peran": "Content Creator"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nama": "Divisi Kemitraan",
+      "kepala_divisi": {
+        "nama": "Kepala Divisi Kemitraan",
+        "prodi": "Pendidikan Bisnis",
+        "tahun_angkatan": 2022,
+        "foto": "kepala_divisi_kemitraan.jpg",
+        "deskripsi": "Mencari dan menjalin kerjasama strategis dengan organisasi lain"
+      },
+      "deskripsi": "Mencari dan menjalin kerjasama strategis dengan organisasi lain dan institusi terkait",
+      "anggota": [
+        {
+          "nama": "Anggota Kemitraan 1",
+          "prodi": "Pendidikan Bisnis",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_kemitraan_1.jpg",
+          "peran": "Partnership Manager"
+        },
+        {
+          "nama": "Anggota Kemitraan 2",
+          "prodi": "Pendidikan Olahraga",
+          "tahun_angkatan": 2023,
+          "foto": "anggota_kemitraan_2.jpg",
+          "peran": "Sponsorship Officer"
+        },
+        {
+          "nama": "Anggota Kemitraan 3",
+          "prodi": "Pendidikan Komunikasi",
+          "tahun_angkatan": 2024,
+          "foto": "anggota_kemitraan_3.jpg",
+          "peran": "Network Development"
+        }
+      ]
+    }
+  ],
+  "struktur_organisasi": {
+    "level_1": ["Ketua Umum"],
+    "level_2": ["Wakil Ketua Umum", "Sekretaris Umum", "Bendahara Umum"],
+    "level_3": ["Divisi Pengembangan SDM", "Divisi Olahraga", "Divisi Hubungan Masyarakat", "Divisi Kemitraan"]
+  }
+}
